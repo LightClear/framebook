@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#222434"><title>映序 · 故事分镜工作台</title>
+  <link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/workbench.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到制作区</a>
+  <aside id="sidebar"></aside>
+  <main id="main" tabindex="-1"><p>正在打开项目库…</p></main>
+  <dialog id="modal"></dialog>
+  <dialog id="image-dialog" aria-labelledby="image-title">
+    <div class="panelhead"><h2 id="image-title"></h2><div class="actions">
+      <button type="button" class="btn sm" data-act="image-size" aria-pressed="false">原始尺寸</button>
+      <button type="button" class="btn sm" data-act="close-image" autofocus>关闭</button>
+    </div></div>
+    <div class="image-stage"><img alt=""></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/static/workbench.js"></script>
+</body>
+</html>
